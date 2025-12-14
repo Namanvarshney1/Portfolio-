@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naman Varshney | Web Developer & Data Analyst</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', sans-serif;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#333;
+    scroll-behavior:smooth;
+}
+
+/* ===== HEADER ===== */
+header{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    padding:50px 20px;
+    color:white;
+}
+
+.profile-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+.profile-container img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.profile-text h1{
+    font-size:2.8em;
+}
+
+.profile-text p{
+    font-size:1.2em;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    background:#0f2027;
+    display:flex;
+    justify-content:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:14px 22px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#4facfe;
+}
+
+/* ===== SECTIONS ===== */
+section{
+    background:white;
+    max-width:1000px;
+    margin:30px auto;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+h2{
+    color:#203a43;
+    margin-bottom:15px;
+    border-left:5px solid #4facfe;
+    padding-left:10px;
+}
+
+/* ===== SKILLS ===== */
+.skills-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.skill{
+    background:#f1f8ff;
+    padding:12px;
+    border-radius:8px;
+    text-align:center;
+    font-weight:500;
+}
+
+/* ===== PROJECTS ===== */
+.project{
+    margin-bottom:15px;
+}
+
+/* ===== CONTACT ===== */
+form{
+    background:#f4faff;
+    padding:25px;
+    border-radius:10px;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+input[type="submit"]{
+    background:#4facfe;
+    color:white;
+    border:none;
+    font-size:1em;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+input[type="submit"]:hover{
+    background:#203a43;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#0f2027;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header id="home">
+    <div class="profile-container">
+        <img src="profile.jpg" alt="Naman Varshney">
+        <div class="profile-text">
+            <h1>Naman Varshney</h1>
+            <p>Web Developer • Data Analyst • UI/UX Enthusiast</p>
+        </div>
+    </div>
+</header>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Hello! I’m <strong>Naman Varshney</strong>, a passionate <strong>Web Developer and Data Analyst</strong>
+        with a strong interest in building modern web applications and extracting valuable insights from data.
+    </p>
+    <p>
+        As a web developer, I specialize in creating responsive, user-friendly, and visually appealing
+        websites using modern frontend and backend technologies. I focus on clean design, performance,
+        and usability to deliver high-quality digital experiences.
+    </p>
+    <p>
+        Alongside development, I have a keen interest in <strong>data analysis</strong>. I enjoy working with
+        datasets to identify trends, perform exploratory data analysis, and create meaningful
+        visualizations that support data-driven decision-making.
+    </p>
+    <p>
+        I am always eager to learn new technologies, improve my analytical thinking, and work on
+        real-world projects that combine <strong>web development and data analytics</strong>.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+
+        <!-- Web Development -->
+        <div class="skill">HTML5 & CSS3</div>
+        <div class="skill">JavaScript (ES6+)</div>
+        <div class="skill">React.js</div>
+        <div class="skill">Responsive Web Design</div>
+        <div class="skill">UI / UX Design</div>
+
+        <!-- Backend -->
+        <div class="skill">Python</div>
+        <div class="skill">Flask</div>
+        <div class="skill">REST APIs</div>
+        <div class="skill">MySQL</div>
+
+        <!-- Data Analyst -->
+        <div class="skill">Data Analysis using Python</div>
+        <div class="skill">Pandas & NumPy</div>
+        <div class="skill">Data Cleaning & Preprocessing</div>
+        <div class="skill">Exploratory Data Analysis (EDA)</div>
+        <div class="skill">Data Visualization (Matplotlib, Seaborn)</div>
+        <div class="skill">SQL for Data Analysis</div>
+        <div class="skill">Excel for Data Analysis</div>
+
+        <!-- Other -->
+        <div class="skill">Problem Solving</div>
+        <div class="skill">Analytical Thinking</div>
+        <div class="skill">Git & Version Control</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <strong>Student Achievement Portfolio</strong><br>
+        A web platform for students to upload certificates and showcase achievements.
+    </div>
+
+    <div class="project">
+        <strong>To-Do List Application</strong><br>
+        JavaScript-based task management system.
+    </div>
+
+    <div class="project">
+        <strong>Weather Dashboard</strong><br>
+        Live weather data visualization using public APIs.
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="experience">
+    <h2>Education</h2>
+    <ul>
+        <li>Master’s Degree in Computer Application (Pursuing)</li>
+        <li>Bachelor’s Degree in Computer Application </li>
+        <li>Hands-on experience with academic & personal projects</li>
+        <li>Strong foundation in programming and data analysis</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <label>Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Message</label>
+        <textarea rows="5" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Naman Varshney | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
