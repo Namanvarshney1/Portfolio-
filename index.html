@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Naman Varshney | Web Developer & Data Analyst</title>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
 *{
     margin:0;
@@ -52,6 +52,38 @@ header{
     font-size:1.2em;
 }
 
+.github-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:15px;
+    padding:10px 24px;
+    border-radius:30px;
+    background:rgba(255,255,255,0.25);
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    letter-spacing:0.5px;
+    transition:all 0.4s ease;
+    box-shadow:0 6px 15px rgba(0,0,0,0.25);
+}
+
+.github-btn i{
+    font-size:1.3em;
+    transition:transform 0.4s ease;
+}
+
+.github-btn:hover{
+    background:white;
+    color:#0f2027;
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 12px 30px rgba(0,0,0,0.35);
+}
+
+.github-btn:hover i{
+    transform:rotate(360deg) scale(1.2);
+}
+    
 /* ===== NAVBAR ===== */
 nav{
     background:#0f2027;
@@ -160,6 +192,9 @@ footer{
         <div class="profile-text">
             <h1>Naman Varshney</h1>
             <p>Web Developer • Data Analyst • UI/UX Enthusiast</p>
+            <a href="https://github.com/Namanvarshney1" target="_blank" class="github-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
         </div>
     </div>
 </header>
@@ -285,3 +320,4 @@ footer{
 
 </body>
 </html>
+
